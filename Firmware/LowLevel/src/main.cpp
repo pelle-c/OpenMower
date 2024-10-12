@@ -66,11 +66,11 @@ SerialPIO uiSerial(PIN_UI_TX, PIN_UI_RX, 250);
 // These are the absolute maximum voltage levels, for a 7S-pack with cells of 4.2V max the BATT_ABS_MAX will be 29.4V. Might be good 
 // with a safety margin here as well.
 // 7S parameters:
-#define BATT_ABS_MAX 28.7f
-#define BATT_ABS_Min 21.7f
+//#define BATT_ABS_MAX 28.7f
+//#define BATT_ABS_Min 21.7f
 // 6S parameters:
-// #define BATT_ABS_MAX 25.2f
-// #define BATT_ABS_Min 19.2f
+#define BATT_ABS_MAX 25.2f
+#define BATT_ABS_Min 19.2f
 
 // We really want to avoid going higher than BATT_ABS_MAX. All battery packs should have a bms that safeguards against overvoltage, 
 // but in worst case overvoltage can lead to explossions. 
